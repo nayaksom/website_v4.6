@@ -1,0 +1,28 @@
+//  Mixins
+
+@mixin round-btn($left, $top, $width, $height, $bg) {
+  content: "";
+  position: absolute;
+  left: $left;
+  top: $top;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  background: $bg;
+}
+
+@mixin placeHolder() {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin socialColor($color) {
+  &:before {
+    background-color: $color;
+  }
+  .fa {
+    color: $color;
+  }
+}
